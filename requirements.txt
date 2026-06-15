@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+scipy
+geopandas
+shapely
+holidays
+nbformat
+nbconvert
+numba
+jupyterlab
+contextily

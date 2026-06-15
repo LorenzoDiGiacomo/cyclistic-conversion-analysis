@@ -1,0 +1,46 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  Data — NOT versioned (too large for GitHub; regenerated, see README)
+#  Raw Divvy trips:  scripts/download_data.py
+#  Processed/interim: produced by running notebooks 01 → 02 in order
+# ─────────────────────────────────────────────────────────────────────────────
+# ignore the *contents* (not the folders themselves) so .gitkeep can survive
+data/raw/*
+data/interim/*
+data/processed/*
+data/raw/trips/*
+data/.DS_Store
+# keep the empty folder structure so the notebooks find their target dirs
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/raw/trips/
+!data/raw/trips/.gitkeep
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Historical / scratch material — kept locally, excluded from the public repo
+# ─────────────────────────────────────────────────────────────────────────────
+archive/
+../Ciclistic_git_backup_DELETE_LATER/
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Jupyter / Python / OS noise
+# ─────────────────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+.virtual_documents/
+*.bak
+.jupyter/
+anaconda_projects/
+.claude/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+.env
+.venv/
+venv/
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Secrets — never commit the Kaggle API token
+# ─────────────────────────────────────────────────────────────────────────────
+.kaggle/
+kaggle.json

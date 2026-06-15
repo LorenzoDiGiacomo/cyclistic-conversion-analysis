@@ -1,0 +1,186 @@
+{
+  "ride_id": {
+    "dtype": "object",
+    "examples": [
+      "AF3863596DF9D94B",
+      "8B38081EBE918800",
+      "1C7F1DE826BBBC8D"
+    ]
+  },
+  "rideable_type": {
+    "dtype": "object",
+    "examples": [
+      "classic_bike",
+      "electric_bike",
+      "electric_bike"
+    ]
+  },
+  "started_at": {
+    "dtype": "datetime64[ns]",
+    "examples": [
+      "2025-04-27 14:29:34.619",
+      "2025-04-23 17:48:51.863",
+      "2025-04-05 17:55:30.845"
+    ]
+  },
+  "ended_at": {
+    "dtype": "datetime64[ns]",
+    "examples": [
+      "2025-04-27 14:36:23.584",
+      "2025-04-23 17:59:06.015",
+      "2025-04-05 18:05:40.032"
+    ]
+  },
+  "start_station_name": {
+    "dtype": "object",
+    "examples": [
+      "Troy St & Elston Ave",
+      "Wabash Ave & Adams St",
+      "Damen Ave & Cortland St"
+    ]
+  },
+  "start_station_id": {
+    "dtype": "object",
+    "examples": [
+      "15631",
+      "KA1503000015",
+      "13133"
+    ]
+  },
+  "end_station_name": {
+    "dtype": "object",
+    "examples": [
+      "Richmond St & Diversey Ave",
+      "Green St & Madison St",
+      "California Ave & Fletcher St"
+    ]
+  },
+  "end_station_id": {
+    "dtype": "object",
+    "examples": [
+      "15645",
+      "TA1307000120",
+      "15642"
+    ]
+  },
+  "start_lat": {
+    "dtype": "float64",
+    "examples": [
+      "41.94524356848",
+      "41.87947235235",
+      "41.915983"
+    ]
+  },
+  "start_lng": {
+    "dtype": "float64",
+    "examples": [
+      "-87.7066499009",
+      "-87.6256886059",
+      "-87.677335"
+    ]
+  },
+  "end_lat": {
+    "dtype": "float64",
+    "examples": [
+      "41.93190196886",
+      "41.881859328038225",
+      "41.93842879148"
+    ]
+  },
+  "end_lng": {
+    "dtype": "float64",
+    "examples": [
+      "-87.7011951301",
+      "-87.64926373958588",
+      "-87.698007756"
+    ]
+  },
+  "member_casual": {
+    "dtype": "object",
+    "examples": [
+      "member",
+      "member",
+      "member"
+    ]
+  },
+  "trip_duration": {
+    "dtype": "float64",
+    "examples": [
+      "6.82",
+      "10.24",
+      "10.15"
+    ]
+  },
+  "is_holiday": {
+    "dtype": "bool",
+    "examples": [
+      "False",
+      "False",
+      "False"
+    ]
+  },
+  "day_category": {
+    "dtype": "object",
+    "examples": [
+      "weekend",
+      "weekday",
+      "weekend"
+    ]
+  },
+  "ride_date": {
+    "dtype": "datetime64[ns]",
+    "examples": [
+      "2025-04-27",
+      "2025-04-23",
+      "2025-04-05"
+    ]
+  },
+  "day_cat_simple": {
+    "dtype": "object",
+    "examples": [
+      "weekend",
+      "weekday",
+      "weekend"
+    ]
+  },
+  "group_id": {
+    "dtype": "int32",
+    "examples": [
+      "2",
+      "0",
+      "2"
+    ]
+  },
+  "start_zone_name": {
+    "dtype": "object",
+    "examples": [
+      "Commercial",
+      "Planned Manufacturing Districts",
+      "Business"
+    ]
+  },
+  "start_zone_type": {
+    "dtype": "float64",
+    "examples": [
+      "2.0",
+      "5.0",
+      "1.0"
+    ]
+  },
+  "end_zone_name": {
+    "dtype": "object",
+    "examples": [
+      "Business",
+      "Downtown",
+      "Business"
+    ]
+  },
+  "end_zone_type": {
+    "dtype": "float64",
+    "examples": [
+      "1.0",
+      "7.0",
+      "1.0"
+    ]
+  }
+}
