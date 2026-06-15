@@ -1,6 +1,6 @@
 {
-  "id": "lorenzodigiacomo13/cyclistic-casual-to-member-conversion-strategy",
-  "title": "Cyclistic — Casual-to-Member Conversion Strategy",
+  "id": "lorenzodigiacomo13/cyclistic-bike-sharing-chicago-analysis",
+  "title": "Cyclistic - Bike Sharing - Chicago - Analysis",
   "code_file": "../notebooks/04_conversion_strategy_casual_to_member.ipynb",
   "language": "python",
   "kernel_type": "notebook",
