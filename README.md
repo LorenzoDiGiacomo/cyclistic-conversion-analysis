@@ -1,6 +1,13 @@
-# Cyclistic — Casual-to-Member Conversion Analysis
+# Cyclistic - Bike Sharing - Chicago - Analysis
 
-Behavioural segmentation of a Chicago bike-share service (Divvy data, **Jun 2025 – May 2026**,
+[![View on Kaggle — Analysis](https://img.shields.io/badge/Kaggle-Analysis_notebook-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/code/lorenzodigiacomo13/cyclistic-bike-sharing-chicago-analysis)
+[![View on Kaggle — Data Cleaning](https://img.shields.io/badge/Kaggle-Data_cleaning_notebook-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/code/lorenzodigiacomo13/cyclistic-bike-sharing-chicago-data-cleaning)
+[![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/lorenzodigiacomo13/cyclistic-chicago-clean)
+
+> **Live, fully-executed notebooks (with all charts and output) are on Kaggle** — click the badges above.
+> This repository holds the reproducible source.
+
+Casual-to-member conversion strategy for a Chicago bike-share service (Divvy data, **Jun 2025 – May 2026**,
 **5.8 million rides**), built to answer one business question:
 
 > *Which casual riders behave most like annual members — and are therefore the most
