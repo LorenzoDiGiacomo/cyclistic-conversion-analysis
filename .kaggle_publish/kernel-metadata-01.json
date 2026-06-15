@@ -1,6 +1,6 @@
 {
   "id": "lorenzodigiacomo13/cyclistic-data-cleaning-pipeline",
-  "title": "Cyclistic — Data Cleaning Pipeline",
+  "title": "Cyclistic - Bike Sharing - Chicago - Data Cleaning",
   "code_file": "../notebooks/01_data_cleaning.ipynb",
   "language": "python",
   "kernel_type": "notebook",
