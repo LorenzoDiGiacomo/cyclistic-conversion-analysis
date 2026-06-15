@@ -1,7 +1,7 @@
 # Cyclistic — Casual-to-Member Conversion Analysis
 
-Behavioural segmentation of a Chicago bike-share service (Divvy data, **Apr 2025 – Mar 2026**,
-**5.6 million rides**), built to answer one business question:
+Behavioural segmentation of a Chicago bike-share service (Divvy data, **Jun 2025 – May 2026**,
+**5.8 million rides**), built to answer one business question:
 
 > *Which casual riders behave most like annual members — and are therefore the most
 > realistic targets for a conversion campaign?*
@@ -17,15 +17,15 @@ data to a segmentation model and a marketing-ready recommendation.
   behavioural profiles:
   | Subgroup | Share of casual rides | Similarity to members | Priority |
   |---|---:|---:|---|
-  | **Commute E-Bike Riders** | 42.6% | 0.55 | **High** |
-  | Weekend E-Bike Riders | 29.2% | 0.15 | Medium |
-  | Classic Leisure Riders | 28.2% | 0.00 | Low |
-- The **Commute E-Bike** subgroup is both the largest *and* the closest to member
-  behaviour — short, weekday, commute-window rides — making it the strongest
+  | **E-Bike Riders** | 52.1% | 0.65 | **High** |
+  | Commute E-Bike Riders | 17.2% | 0.49 | Medium |
+  | Classic Leisure Riders | 30.8% | 0.00 | Low |
+- The **E-Bike Riders** subgroup is both the largest *and* the closest to member
+  behaviour — short rides, predominantly weekday-adjacent — making it the strongest
   structural conversion target.
-- A secondary signal: **~7 in 10** PM casual-commute rides are on e-bikes and **~1 in 4**
-  end outside a docking station, pointing to a possible infrastructure lever beyond
-  marketing alone.
+- A secondary signal: the **Commute E-Bike Riders** subgroup has 100% commute-window
+  rides and ~1 in 4 end outside a docking station, pointing to a possible infrastructure
+  lever beyond marketing alone.
 
 Full write-up with charts: [`reports/cyclistic_conversion_strategy.html`](reports/cyclistic_conversion_strategy.html)
 (open locally, or view the notebook directly on GitHub).

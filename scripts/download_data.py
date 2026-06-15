@@ -36,10 +36,11 @@ TRIPS_DIR = ROOT / "data" / "raw" / "trips"
 RAW_DIR   = ROOT / "data" / "raw"
 
 # Public Divvy bucket. Each month is "<YYYYMM>-divvy-tripdata.zip".
+# Rolling 12-month analysis window: Jun 2025 – May 2026.
 BASE_URL = "https://divvy-tripdata.s3.amazonaws.com"
 MONTHS   = [
-    "202504", "202505", "202506", "202507", "202508", "202509",
-    "202510", "202511", "202512", "202601", "202602", "202603",
+    "202506", "202507", "202508", "202509", "202510", "202511",
+    "202512", "202601", "202602", "202603", "202604", "202605",
 ]
 
 AUX_FILES = {

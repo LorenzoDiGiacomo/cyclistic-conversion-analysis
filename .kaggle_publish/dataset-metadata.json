@@ -1,6 +1,6 @@
 {
-  "title": "Cyclistic Chicago — Cleaned Trip Data (Apr 2025 – Mar 2026)",
-  "id": "YOUR_KAGGLE_USERNAME/cyclistic-chicago-clean",
+  "title": "Cyclistic Chicago Cleaned Trip Data",
+  "id": "lorenzodigiacomo13/cyclistic-chicago-clean",
   "licenses": [
     {
       "name": "other"
@@ -8,8 +8,8 @@
   ],
   "resources": [
     {
-      "path": "df_clean.csv",
-      "description": "Cleaned ride-level Divvy data (5.6M rides) produced by notebook 01."
+      "path": "df_clean.csv.gz",
+      "description": "Cleaned ride-level Divvy data (Jun 2025 – May 2026), gzip-compressed. Notebook 04 decompresses it automatically."
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "id": "lorenzodigiacomo13/cyclistic-casual-to-member-conversion-strategy",
-  "title": "Cyclistic — Casual-to-Member Conversion Strategy",
-  "code_file": "../notebooks/04_conversion_strategy_casual_to_member.ipynb",
+  "id": "lorenzodigiacomo13/cyclistic-data-cleaning-pipeline",
+  "title": "Cyclistic — Data Cleaning Pipeline",
+  "code_file": "../notebooks/01_data_cleaning.ipynb",
   "language": "python",
   "kernel_type": "notebook",
   "is_private": "false",

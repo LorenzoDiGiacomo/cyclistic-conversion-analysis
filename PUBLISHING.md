@@ -20,7 +20,7 @@ gh auth login
 
 # from the project root
 gh repo create cyclistic-conversion-analysis --public --source=. --remote=origin \
-  --description "Behavioural segmentation of Chicago bike-share data (5.6M rides)"
+  --description "Behavioural segmentation of Chicago bike-share data (Jun 2025 – May 2026)"
 git push -u origin main
 ```
 
