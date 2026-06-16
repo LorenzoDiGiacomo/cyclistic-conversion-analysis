@@ -76,63 +76,13 @@
             "name": "member_casual",
             "description": "Rider type: 'member' (annual subscriber) or 'casual' (single-ride / day pass).",
             "type": "string"
-          },
-          {
-            "name": "trip_duration",
-            "description": "Engineered: trip length in minutes (ended_at - started_at).",
-            "type": "number"
-          },
-          {
-            "name": "is_holiday",
-            "description": "Engineered: True if the ride date is a US public holiday.",
-            "type": "boolean"
-          },
-          {
-            "name": "day_category",
-            "description": "Engineered: 'weekday' or 'weekend'.",
-            "type": "string"
-          },
-          {
-            "name": "ride_date",
-            "description": "Engineered: calendar date of the ride (no time component).",
-            "type": "datetime"
-          },
-          {
-            "name": "day_cat_simple",
-            "description": "Engineered: simplified weekday/weekend label.",
-            "type": "string"
-          },
-          {
-            "name": "group_id",
-            "description": "Engineered: internal group/cluster id used in the analysis notebooks.",
-            "type": "integer"
-          },
-          {
-            "name": "start_zone_name",
-            "description": "Engineered: Chicago zoning type of the start station (Business, Residential, Commercial, Downtown, Manufacturing, ...). Joined from the City of Chicago zoning map.",
-            "type": "string"
-          },
-          {
-            "name": "start_zone_type",
-            "description": "Engineered: numeric zoning code of the start station (maps to start_zone_name).",
-            "type": "number"
-          },
-          {
-            "name": "end_zone_name",
-            "description": "Engineered: Chicago zoning type of the end station. Joined from the City of Chicago zoning map.",
-            "type": "string"
-          },
-          {
-            "name": "end_zone_type",
-            "description": "Engineered: numeric zoning code of the end station (maps to end_zone_name).",
-            "type": "number"
           }
         ]
       }
     }
   ],
-  "subtitle": "5.8M cleaned & enriched Divvy bike-share rides (Chicago, Jun 2025-May 2026)",
-  "description": "Hey there! 👋\n\nThis is the clean, analysis-ready version of Chicago's Divvy bike-share data — the same trips Cyclistic riders take every day, but already scrubbed, deduplicated, and supercharged with a bunch of features I engineered so you can skip the boring part and jump straight into the fun stuff! 🚴‍♂️\n\nThe raw Divvy data is great, but let's be honest — it's messy. Broken timestamps, rides that last 3 seconds (or 3 days 😅), missing stations, negative durations... I took 12 months of rides (Jun 2025 → May 2026, ~5.8M trips), cleaned out all the garbage, and then added the columns I always wished were there.\n\n## What did I add? 🛠️\n\n- **trip_duration** — ride length in minutes, already computed (no more datetime math!)\n- **day_category / day_cat_simple** — weekday vs weekend at a glance\n- **is_holiday** — was it a US public holiday? True/False, done.\n- **ride_date** — clean date column for easy time grouping\n- **start_zone_name / end_zone_name** — and here's the magic ✨ I joined every station with Chicago's official zoning map, so each ride now tells you whether it started/ended in a Business, Residential, Commercial, Downtown, or Manufacturing zone. Urban context, baked right in!\n\n## Why did I do this?\n\nBecause the most interesting question in bike-sharing isn't \"how long was the ride?\" — it's \"who rides where, and why?\" 🤔 Members and casual riders behave totally differently, and now you can see it across time, geography, AND city zoning without any extra prep work.\n\n## What can you use it for? 📊\n\n- **Member vs casual analysis:** the classic Cyclistic case study — but with way more signal (the split here is ~64% member / 36% casual).\n- **Spatial analysis:** map rides by start/end zone — do casual riders cluster around downtown leisure spots while members commute through business corridors? 🗺️\n- **Temporal patterns:** rush-hour peaks, weekend leisure waves, holiday dips.\n- **Conversion strategy:** find which casual riders behave most like members (that's exactly what I did in my companion notebook!).\n- **Data viz:** gorgeous choropleth maps, heatmaps, and time series — the data's already clean, so go wild. 🎨\n\n## Files included 📁\n\n- **df_clean.csv.gz** — the full ride-level dataset, gzip-compressed (~209 MB). My notebooks decompress it automatically, but any tool reads gzipped CSV out of the box.\n\nPerfect for data analysts, urban geeks, bike-sharing researchers, or anyone doing the Google Data Analytics capstone who wants a dataset that's actually ready to go! 🚴‍♂️🏙️\n\nGrab it, group by member_casual and start_zone_name, and watch the story unfold. 🌍✨",
+  "subtitle": "5.8M cleaned Divvy bike-share trip records (Chicago, Jun 2025-May 2026)",
+  "description": "Hey there! 👋\n\nThis is the clean, analysis-ready version of Chicago's Divvy bike-share data — the official trip records Cyclistic riders generate every day, with all the messy bits already scrubbed out so you can get straight to the analysis. 🚴‍♂️\n\nThe raw Divvy data is great, but let's be honest — it's messy. Broken or out-of-order timestamps, rides that last 3 seconds (or 3 days 😅), missing station info, duplicate IDs, impossible durations... I took 12 months of rides (Jun 2025 → May 2026, ~5.8M trips) and cleaned all of it.\n\n## What I did 🧼\n\n- Removed duplicate ride IDs\n- Dropped rides with broken, negative or absurd durations\n- Handled missing station names, IDs and coordinates\n- Standardized data types (proper datetimes, numeric coordinates)\n- Kept the original Divvy schema intact — no engineered features, no opinions, just clean source data you can build on\n\n## What's inside 📋\n\nThe standard Divvy trip schema (13 columns), one row per ride: ride id, bike type, start/end timestamps, start/end station names & IDs, start/end coordinates, and rider type (member vs casual).\n\n## What can you use it for? 📊\n\n- **Member vs casual analysis:** the classic Cyclistic case study (split here is ~64% member / 36% casual).\n- **Build your own features:** trip duration, day-of-week, holidays, spatial joins — all yours to engineer from a clean base.\n- **Spatial analysis & maps:** start/end coordinates are clean and ready to plot. 🗺️\n- **Temporal patterns:** rush-hour peaks, weekend waves, seasonal trends.\n\nPerfect for data analysts, urban geeks, bike-sharing researchers, or anyone doing the Google Data Analytics capstone who wants a clean dataset to start from! 🚴‍♂️🏙️\n\nGrab it, group by member_casual, and start exploring. 🌍✨",
   "isPrivate": false,
   "keywords": [
     "cycling",
@@ -140,7 +90,6 @@
     "chicago",
     "bike sharing",
     "data cleaning",
-    "business analytics",
-    "geospatial analysis"
+    "business analytics"
   ]
 }
