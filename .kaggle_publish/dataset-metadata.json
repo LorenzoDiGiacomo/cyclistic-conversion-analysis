@@ -9,7 +9,126 @@
   "resources": [
     {
       "path": "df_clean.csv.gz",
-      "description": "Cleaned ride-level Divvy data (Jun 2025 – May 2026), gzip-compressed. Notebook 04 decompresses it automatically."
+      "description": "Cleaned ride-level Divvy data (Jun 2025 – May 2026), gzip-compressed. Notebook 04 decompresses it automatically.",
+      "schema": {
+        "fields": [
+          {
+            "name": "ride_id",
+            "description": "Unique trip identifier (original Divvy field).",
+            "type": "string"
+          },
+          {
+            "name": "rideable_type",
+            "description": "Bike type used: classic_bike or electric_bike.",
+            "type": "string"
+          },
+          {
+            "name": "started_at",
+            "description": "Timestamp when the trip started.",
+            "type": "datetime"
+          },
+          {
+            "name": "ended_at",
+            "description": "Timestamp when the trip ended.",
+            "type": "datetime"
+          },
+          {
+            "name": "start_station_name",
+            "description": "Name of the station where the trip started.",
+            "type": "string"
+          },
+          {
+            "name": "start_station_id",
+            "description": "ID of the start station.",
+            "type": "string"
+          },
+          {
+            "name": "end_station_name",
+            "description": "Name of the station where the trip ended.",
+            "type": "string"
+          },
+          {
+            "name": "end_station_id",
+            "description": "ID of the end station.",
+            "type": "string"
+          },
+          {
+            "name": "start_lat",
+            "description": "Latitude of the start point.",
+            "type": "number"
+          },
+          {
+            "name": "start_lng",
+            "description": "Longitude of the start point.",
+            "type": "number"
+          },
+          {
+            "name": "end_lat",
+            "description": "Latitude of the end point.",
+            "type": "number"
+          },
+          {
+            "name": "end_lng",
+            "description": "Longitude of the end point.",
+            "type": "number"
+          },
+          {
+            "name": "member_casual",
+            "description": "Rider type: 'member' (annual subscriber) or 'casual' (single-ride / day pass).",
+            "type": "string"
+          },
+          {
+            "name": "trip_duration",
+            "description": "Engineered: trip length in minutes (ended_at - started_at).",
+            "type": "number"
+          },
+          {
+            "name": "is_holiday",
+            "description": "Engineered: True if the ride date is a US public holiday.",
+            "type": "boolean"
+          },
+          {
+            "name": "day_category",
+            "description": "Engineered: 'weekday' or 'weekend'.",
+            "type": "string"
+          },
+          {
+            "name": "ride_date",
+            "description": "Engineered: calendar date of the ride (no time component).",
+            "type": "datetime"
+          },
+          {
+            "name": "day_cat_simple",
+            "description": "Engineered: simplified weekday/weekend label.",
+            "type": "string"
+          },
+          {
+            "name": "group_id",
+            "description": "Engineered: internal group/cluster id used in the analysis notebooks.",
+            "type": "integer"
+          },
+          {
+            "name": "start_zone_name",
+            "description": "Engineered: Chicago zoning type of the start station (Business, Residential, Commercial, Downtown, Manufacturing, ...). Joined from the City of Chicago zoning map.",
+            "type": "string"
+          },
+          {
+            "name": "start_zone_type",
+            "description": "Engineered: numeric zoning code of the start station (maps to start_zone_name).",
+            "type": "number"
+          },
+          {
+            "name": "end_zone_name",
+            "description": "Engineered: Chicago zoning type of the end station. Joined from the City of Chicago zoning map.",
+            "type": "string"
+          },
+          {
+            "name": "end_zone_type",
+            "description": "Engineered: numeric zoning code of the end station (maps to end_zone_name).",
+            "type": "number"
+          }
+        ]
+      }
     }
   ],
   "subtitle": "5.8M cleaned & zoning-enriched Divvy bike-share rides (Chicago, Jun 2025-May 2026)",
