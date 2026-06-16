@@ -11,5 +11,17 @@
       "path": "df_clean.csv.gz",
       "description": "Cleaned ride-level Divvy data (Jun 2025 – May 2026), gzip-compressed. Notebook 04 decompresses it automatically."
     }
+  ],
+  "subtitle": "5.8M cleaned & zoning-enriched Divvy bike-share rides (Chicago, Jun 2025-May 2026)",
+  "description": "Hey there! 👋\n\nThis is the clean, analysis-ready version of Chicago's Divvy bike-share data — the same trips Cyclistic riders take every day, but already scrubbed, deduplicated, and supercharged with a bunch of features I engineered so you can skip the boring part and jump straight into the fun stuff! 🚴‍♂️\n\nThe raw Divvy data is great, but let's be honest — it's messy. Broken timestamps, rides that last 3 seconds (or 3 days 😅), missing stations, negative durations... I took 12 months of rides (Jun 2025 → May 2026, ~5.8M trips), cleaned out all the garbage, and then added the columns I always wished were there.\n\n## What did I add? 🛠️\n\n- **trip_duration** — ride length in minutes, already computed (no more datetime math!)\n- **day_category / day_cat_simple** — weekday vs weekend at a glance\n- **is_holiday** — was it a US public holiday? True/False, done.\n- **ride_date** — clean date column for easy time grouping\n- **start_zone_name / end_zone_name** — and here's the magic ✨ I joined every station with Chicago's official zoning map, so each ride now tells you whether it started/ended in a Business, Residential, Commercial, Downtown, or Manufacturing zone. Urban context, baked right in!\n\n## Why did I do this?\n\nBecause the most interesting question in bike-sharing isn't \"how long was the ride?\" — it's \"who rides where, and why?\" 🤔 Members and casual riders behave totally differently, and now you can see it across time, geography, AND city zoning without any extra prep work.\n\n## What can you use it for? 📊\n\n- **Member vs casual analysis:** the classic Cyclistic case study — but with way more signal (the split here is ~64% member / 36% casual).\n- **Spatial analysis:** map rides by start/end zone — do casual riders cluster around downtown leisure spots while members commute through business corridors? 🗺️\n- **Temporal patterns:** rush-hour peaks, weekend leisure waves, holiday dips.\n- **Conversion strategy:** find which casual riders behave most like members (that's exactly what I did in my companion notebook!).\n- **Data viz:** gorgeous choropleth maps, heatmaps, and time series — the data's already clean, so go wild. 🎨\n\n## Files included 📁\n\n- **df_clean.csv.gz** — the full ride-level dataset, gzip-compressed (~209 MB). My notebooks decompress it automatically, but any tool reads gzipped CSV out of the box.\n\nPerfect for data analysts, urban geeks, bike-sharing researchers, or anyone doing the Google Data Analytics capstone who wants a dataset that's actually ready to go! 🚴‍♂️🏙️\n\nGrab it, group by member_casual and start_zone_name, and watch the story unfold. 🌍✨",
+  "isPrivate": false,
+  "keywords": [
+    "cycling",
+    "transportation",
+    "chicago",
+    "bike sharing",
+    "data cleaning",
+    "business analytics",
+    "geospatial analysis"
   ]
 }
