@@ -45,9 +45,6 @@ Full write-up with charts: [`reports/cyclistic_conversion_strategy.html`](report
 Ciclistic_analisi/
 ├── notebooks/                  # analysis pipeline, run in order
 │   ├── 01_data_cleaning.ipynb              # 12 raw CSVs → df_clean.csv
-│   ├── 02_zone_data_processing.ipynb       # Chicago zoning preprocessing
-│   ├── 03_analysis_and_visualization.ipynb # EDA, usage patterns, zoning maps
-│   ├── 03_analysis_and_visualization_poi.ipynb  # POI-focused variant
 │   └── 04_conversion_strategy_casual_to_member.ipynb  # segmentation + strategy
 ├── scripts/                    # helper scripts (incl. data download)
 │   └── download_data.py        # fetches the raw Divvy trip data
@@ -56,7 +53,7 @@ Ciclistic_analisi/
 │   └── figures/
 ├── data/                       # NOT versioned — see "Getting the data" below
 │   ├── raw/                    # raw Divvy CSVs + Chicago city files
-│   ├── interim/                # intermediate (zoning) datasets
+│   ├── interim/                # intermediate datasets
 │   └── processed/              # df_clean.csv and aggregates
 └── requirements.txt
 ```
