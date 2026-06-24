@@ -39,6 +39,21 @@ Full write-up with charts: [`reports/cyclistic_conversion_strategy.html`](report
 
 ---
 
+## Stakeholder presentations
+
+Two decision-ready decks translate the analysis for a business audience — white-background,
+minimalist style, with casual riders in amber and members in blue throughout:
+
+| Deck | Slides | Audience | Files |
+|---|---:|---|---|
+| **Executive summary** | 9 | Decision-makers — the call, the target, the actions | [PDF](presentations/Cyclistic_Conversion_Executive.pdf) · [PPTX](presentations/Cyclistic_Conversion_Executive.pptx) |
+| **Full analysis** | 18 | Stakeholders who also want method, validation and per-segment detail | [PDF](presentations/Cyclistic_Conversion_Full.pdf) · [PPTX](presentations/Cyclistic_Conversion_Full.pptx) |
+
+The decks are generated reproducibly with [`python-pptx`](https://python-pptx.readthedocs.io/) —
+see the build scripts in [`presentations/`](presentations/).
+
+---
+
 ## Repository structure
 
 ```
@@ -51,6 +66,7 @@ Ciclistic_analisi/
 ├── src/                        # reusable helpers (utils, viz)
 ├── reports/                    # rendered HTML reports + figures (versioned)
 │   └── figures/
+├── presentations/              # stakeholder decks (PPTX + PDF) + python-pptx build scripts
 ├── data/                       # NOT versioned — see "Getting the data" below
 │   ├── raw/                    # raw Divvy CSVs + Chicago city files
 │   ├── interim/                # intermediate datasets
